@@ -1,0 +1,182 @@
+body {
+	margin: 0;
+}
+/*H1 allignment*/
+
+h1 {
+	text-align: center;
+}
+p {
+	text-align: center;
+}
+
+/*Side navigation bar -- fixed width anchored to left side of screen*/
+/*Modified from https://www.w3schools.com/css/css_navbar.asp */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 15%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+li a.active {
+	background-color: rgb(219, 45, 45);
+	color: white;
+}
+li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
+
+/*Table formatting*/
+th, td {
+	text-align: center;
+	padding: 8px;
+}
+th {
+	background-color: rgb(219, 45, 45);
+	color: white;
+}
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/*Text input  form CSS*/
+input[type=text], input[type=number], input[type=password], select {
+	width: 33%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid rgb(163, 163, 163);
+	border-radius: 4px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+/* Hide HTML5 Up and Down arrows on number input */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+/*Credit to That Stevens Guy https://www.thatstevensguy.com/programming/disable-arrows-on-number-inputs/ */
+
+input[type=submit] {
+	width: 33%;
+	background-color: rgb(219, 45, 45);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/*Changes submit button to green when hovered over*/
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+button{
+  width: 33%;
+	background-color: rgb(219, 45, 45);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover{
+  background-color: #45a049;
+}
+
+div {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+form {
+	text-align: center;
+}
+
+.form_heading {
+	text-align: center;
+}
+
+.error_heading {
+	text-align: center;
+	color: rgb(219, 45, 45);
+}
+
+.Login {
+	text-align: center;
+	display: inline-block;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+/* Modified from https://www.w3schools.com/howto/howto_css_signup_form.asp */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 12%;
+  top: 7%;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
